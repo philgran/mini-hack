@@ -1,0 +1,56 @@
+[
+	"adnomia" : {
+		"title" : "Adnomia",
+		"logo" : "img/wl/adnomia/logo.png",
+		"favicon" : "img/wl/adnomia/favicon.ico",
+		"styles.screen_bg_color" : "#ffdac6",
+		"styles.nav_color" : "#f65c09",
+		"styles.link_color" : "#007ad8",
+		"styles.header_color" : "#e5063b",
+		"styles.row_checked_color" : "#9ce0ff",
+		"styles.row_selected_color" : "#A3D5EC",
+		"styles.footer_link_color" : "#007ad8",
+		"showWikiLink" : false,
+		"showFooterLink" : false
+	},
+
+
+	"adsimilis" : {
+		"title" : "AdSimilis",
+		"logo" : "img/wl/adsimilis/logo.png",
+		"favicon" : "img/wl/adsimilis/favicon.ico",
+		"styles.nav_color" : "#0b7cfa",
+		"styles.link_color" : "#0b7cfa",
+		"styles.header_color" : "#0b7cfa",
+		"styles.screen_bg_color" : "#d6e2ef",
+		"styles.row_checked_color" : "#d6e2ef7",
+		"styles.row_selected_color" : "#E0E7EF"
+	},
+
+
+	"matiro" : {
+		"title" : "Matiro",
+		"logo" : "img/wl/matiro/logo.png",
+		"favicon" : "img/wl/matiro/favicon.ico",
+		"styles.screen_bg_color" : "#f3f3f3",
+		"styles.nav_color" : "#8a2b69",
+		"styles.row_selected_color" : "#d7b7cc",
+		"styles.link_color" : "#8a2b69",
+		"styles.header_color" : "#8a2b69"
+	},
+
+
+	"yellowhammer" : {
+		"title" : "ClickHYPE",
+		"logo" : "img/wl/yellowhammer/logo.png",
+		"favicon" : "img/wl/yellowhammer/favicon.png",
+		"styles.screen_bg_color" : "#eeeeee",
+		"styles.header_color" : "#205273",
+		"styles.nav_color" : "#205273",
+		"styles.link_color" : "#205273",
+		"styles.row_selected_color" : "#b6cede",
+		"styles.row_checked_color" : "#b6cede",
+		"styles.footer_link_color" : "#205273",
+		"styles.footer_text_color" : "#205273"
+	}
+]

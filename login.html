@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AppNexus Console &ndash; Sign In</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.ui.all-compiled.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/global.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/anx.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/login.css" type="text/css" media="screen" />
+	
+	<link rel="stylesheet" href="/style/color" type="text/css" media="screen" charset="utf-8">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+	<link rel="icon" type="image/png" href="/favicon.ico" />
+</head>
+<!--[if IE]><body class="ie"><![endif]-->
+<!--[if !IE]><body><![endif]-->
+	<div id="container">
+	<!--[if lte IE 7]><div class="flash error">This version of Internet Explorer is not supported. For the best experience, please upgrade to a newer version of IE, or use Firefox or Chrome.</div><![endif]-->
+
+		<div id="site" class="non-appNexus">
+			<div class="login-header">
+				<img src="img/appnexus-logo.png" />
+			</div>
+
+
+			<div class="row clearFix">
+				<div class="small-column">
+					<div class="highlight-box">
+						<h2>Sign In</h2>
+						<form action="/index/sign-in" method="POST" id="login-form">
+							<fieldset>
+
+								<label for="anxs-login-username">Username:</label>
+								<input id="anxs-login-username" type="text" name="username" size="30" value="" />
+								<label for="anxs-login-password">Password:</label>
+								<input id="anxs-login-password" type="password" name="password" size="30" />
+								<button class="btn">Sign In</button>
+								<input type="checkbox" name="remember_credentials" id="anxs-login-remember-credentials"  />
+								<label for="anxs-login-remember-credentials">Remember me</label>
+						
+								<div class="forgot-link">
+									<a href="/account-recovery">Forgot Password?</a>
+								</div>
+
+							</fieldset>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="footer">
+			<ul class="link-utils">
+				<li>
+					<span class="version">development</span>
+					<span class="view-token">418df855-dd6e-4c32-a2f9-494b86d3e882</span>
+					<span>| **</span>
+				</li>
+				<li>|<a href="http://wiki.appnexus.com/display/console" target="_blank">Help</a></li>
+				<li>|<a href="#ui-info" class="ui-info">UI info</a></li>
+				<li>|<a id="debugger-link">Enable API Viewer</a></li>
+				
+			</ul>
+		</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-ui-extends.js"></script>
+<script type="text/javascript" src="js/adnxs.js"></script>
+<script type="text/javascript" src="js/anx.js"></script>
+<script type="text/javascript" src="js/Util.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+	$(function(){
+		
+	});
+// ]]>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+html {
+	background-color: <%= screen_bg_color %>;
+}
+
+body {
+	color: <%= main_text_color %>;
+}
+
+a {
+	color: <%= link_color %>;
+}
+
+textarea,
+input[type="text"],
+input[type="password"] {
+	color: <%= main_text_color %>;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border-color: <%= nav_color %>;
+}
+
+#login-form fieldset .checkbox-set label {
+	color: <%= main_text_color %>;
+}
+
+.filter-inline-tip {
+    color: <%= link_color %>;
+}
+
+/* Page structure elements */
+#main {
+	border-color: <%= nav_color %>;
+	-moz-box-shadow: 2px 2px 2px <%= shadow_color %>;
+	-webkit-box-shadow: 2px 2px 2px <%= shadow_color %>;
+	box-shadow: 2px 2px 2px <%= shadow_color %>;
+}
+
+#footer {
+	color: <%= isset(footer_text_color) % footer_text_color : main_text_color %>;
+}
+
+#footer ul li a {
+	color: <%= isset(footer_link_color) % footer_link_color : link_color %>;
+}
+
+
+.ui-widget-content {
+	color: <%= main_text_color %>
+}
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: <%= font_family %>;
+	color: <%= main_text_color %>;
+}
+
+.ui-widget-content a {
+	color: <%= link_color %>;
+}
+
+
+/* Navigation */
+div.nav ul#nav > li.selected,
+div.nav ul#nav > li.selected:hover {
+	border-color: <%= nav_color %>;
+	background-color: <%= nav_color %>;
+}
+
+div.nav ul#nav > li.selected > a {
+	background-color: <%= nav_color %>;
+}
+
+.btn {
+	/*color: <%= main_text_color %> !important;*/
+}
+.btn.btn-warning,
+.btn.selected {
+	color: #fff !important;
+}
+
+.btn-primary,
+#site button.btn {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	border-color: <%= link_color %>;
+	background-color: <%= link_color %>;
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 1%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(1%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 1%,rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 1%,rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 1%,rgba(255,255,255,0) 100%);
+	background-image: linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 1%,rgba(255,255,255,0) 100%);
+}
+
+.btn-primary:hover {
+	background-color: <%= link_color %>;
+}
+

@@ -1,0 +1,303 @@
+/* =NAV ------------------------- */
+
+ul#nav {
+	padding-top: 8px;
+}
+
+div.nav ul,
+div.nav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.nav ul li a {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+
+div.nav ul#nav > li {
+	background: #ccc;
+	border: 3px solid #ccc;
+	border-right: 0;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 27px;
+	margin-bottom: 8px;
+	position: relative;
+	border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	box-shadow: 2px 2px 2px #888;
+	-moz-box-shadow: 2px 2px 2px #888;
+	-webkit-box-shadow: 2px 2px 2px #888;
+}
+
+div.nav ul#nav > li:hover {
+ 	position: relative;
+	background-color: #afafaf;
+	border-color: #afafaf;
+}
+
+div.nav ul#nav > li a {
+	color: #333;
+	height: 24px;
+	padding: 0 0 0 6px;
+}
+
+div.nav ul#nav > li a span {
+	background-image: url(/images/nav-expander.png);
+	background-position: center 11px;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+}
+
+div.nav ul#nav > li a span:hover,
+div.nav ul#nav > li.selected a span {
+	background-position: center 11px;
+	opacity: 1;
+}
+
+div.nav ul#nav > li.selected,
+div.nav ul#nav > li.selected:hover {
+	border: 3px solid;
+	border-right: 0;
+}
+
+div.nav ul#nav > li.selected > a {
+	color: #fff;
+	text-shadow: 0 1px 0 #444;
+}
+
+div.nav ul#nav > li.selected ul,
+div.nav ul#nav > li.expanded ul {
+	margin-top: 3px;
+}
+
+div.nav ul#nav > li.selected.closed > a {
+	height: 24px;
+	border-bottom: 0;
+}
+
+div.nav ul#nav > li.closed a {
+	display: block;
+	height: 24px;
+}
+div.nav ul#nav > li a.campaign-monitor {
+	height: 33px;
+	line-height: 17px;
+	background-image: url("/images/icon-cm-nav-btn.png");
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin-left: 6px;
+	padding-left: 25px;
+}
+
+div.nav ul#nav > li a.on {
+	background: url(/images/arrow-right.png) no-repeat;
+}
+
+/* =SUBNAV ------------------------- */
+
+div.nav ul#nav > li ul.top-level-subnav {
+	list-style: none;
+	padding: 2px 0 1px 0;
+	background-color: #fff;
+}
+
+div.nav ul#nav > li ul.top-level-subnav > li {
+	font-size: 13px;
+	display: block;
+	margin: 0 8px 2px 8px;
+	padding: 2px 0;
+	line-height: 15px;
+	background-color: #fff;
+}
+
+/* Border-bottom is removed for the last top-level-subnav child using jquery, in site.js */
+
+div.nav ul#nav > li ul.top-level-subnav > li a span { /* Positions Cufon block text */
+	position: relative;
+	top: 0;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li a {
+	text-decoration: none; 
+	color: #333;
+	font-weight: normal;
+	border: 0;
+	height: auto;
+	cursor: pointer;
+	padding: 0;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li a:hover {
+	border: 0;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent a.selected {
+	color: #333;
+	font-weight: bold;
+	cursor: text;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent ul.secondary-subnav {
+	list-style: none;
+	/*margin-left: 12px;*/
+	margin: 0;
+	margin-bottom: -1px;
+	position: relative;
+	top: 0;
+	margin-top: 3px;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent  ul.secondary-subnav li {
+	border-bottom: 0;
+	font-size: 11px;
+	margin: 0 0 2px 0;
+	padding-left: 0;
+	line-height: 14px;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent  ul.secondary-subnav li a {
+	text-decoration: none; 
+	color: #333;
+	font-weight: normal;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent  ul.secondary-subnav li a.selected,
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent  ul.secondary-subnav li a.selected:hover {
+	text-decoration: underline;
+	font-weight: normal;
+	cursor: text;
+	color: #333;
+}
+
+div.nav ul#nav > li ul.top-level-subnav li.nav-parent  ul.secondary-subnav li a:hover {
+	text-decoration: underline;
+}
+
+.now-viewing-nav {
+	color: #fff; 
+	font-size: 14px; 
+	line-height: 16px; 
+	padding: 4px 27% 4px 8px; 
+	display: block; 
+	width: 72%; 
+	background: #666;
+	margin: -2px 0 4px 0;
+}
+
+.subnav-expander.nav-expanded,
+.subnav-expander.nav-expanded:hover {
+	background: url(/images/subnav-expander.gif) no-repeat right center;
+	opacity: 1;
+}
+
+.subnav-expander:hover {
+	background: url(/images/subnav-expander.gif) no-repeat right center;
+}
+
+#sitewide-search-summary {
+	width: 30%;
+	float: left;	
+}	
+
+#sitewide-search-summary div {
+	margin-top: 8px;
+}
+
+#sitewide-search-summary ul {
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	width: 90%;
+}
+
+#sitewide-search-summary ul li {
+	padding-left: 0px;
+}
+
+#sitewide-search-summary ul li:hover {
+	cursor: pointer;
+}
+
+#sitewide-search-summary ul li.selected {
+	margin-left:-4px;
+	padding-left: 4px;
+	background-color: #FFD28C;
+	font-weight: bold;
+}
+
+ul.sitewide-search-results-container li .search-result {
+	width: 70%;
+	float: left;
+}
+ul.sitewide-search-results-container li .search-result-category {
+	float: left;
+}
+
+.search-result-weight {
+	background-color: #CCC;
+	height: 1em;
+}
+
+li.quicksearch-category {
+	background-color: #666;
+	color: #FFF;	
+}
+
+.search-name,
+.search-id {
+	float: left;
+}
+
+.search-id {
+	width: 30%;	
+}
+
+li.inactive .search-result-category {
+	font-style: normal;
+}
+
+.search-item-hierarchy {
+	font-style: normal;
+}
+.search-parent {
+	text-decoration:none;
+}
+.search-parent.inactive {
+	font-style: italic;
+}
+
+.search-result-name {
+	font-size: 14px;
+}
+
+.search-categories-header {
+	background-color: #666;
+	color: #FFF;
+	margin-bottom: 8px;
+	margin-left:-4px;
+	padding-left: 4px;
+}
+
+#sitewide-search-results-list li.search-result-category-header {
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 4px;
+	background-color: #666;
+	color: #FFF;
+}
+
+.ui-menu li.quicksearch-result.ui-menu-item  {
+	padding: 1px;
+	background-color: #FFF;
+}
+

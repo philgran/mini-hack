@@ -1,0 +1,333 @@
+
+.global-toolbar, #header, #main {
+	display: none;
+}
+
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+button.btn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 4px 10px 4px;
+	margin-bottom: 0;
+	font-size: 13px;
+	line-height: 18px;
+	color: #fff !important;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #179894, #179894);
+	background-image: -ms-linear-gradient(top, #179894, #046367);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#179894), to(#046367));
+	background-image: -webkit-linear-gradient(top, #94ccc9 1px, #179894 1px, #046367);
+	background-image: -o-linear-gradient(top, #179894, #046367);
+	background-image: linear-gradient(top, #179894, #046367);
+	background-repeat: repeat-x;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr = '#179894', endColorstr = '#179894', GradientType = 0);
+	border: 1px solid #006663;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+	cursor: pointer;
+	*margin-left: .3em;
+}
+
+.gradiant {
+	background: #f0f9ff;
+	background: -moz-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -webkit-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -o-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -ms-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+}
+
+body {
+	font: 12px arial;
+	background: #fff;
+	border-top: 5px solid #036564;
+}
+
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#container {
+	position: static;
+}
+
+#site a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input[type=text], input[type=password] {
+	border: 1px solid #bababa;
+	border-radius: 2px;
+	box-shadow: 0 0 3px rgba(185, 185, 185, .1);
+	padding: 5px 10px;
+	width: 254px;
+
+}
+
+#site input[type=text]:focus, #site input[type=password]:focus {
+	border: 1px solid #bababa;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-bottom: .7em;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-weight: 700;
+	margin: .7em 0 1em;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: 700;
+	margin: .5em 0;
+}
+
+p {
+	margin: .5em 0;
+}
+
+#site {
+	margin: 0 auto;
+	width: 960px;
+	padding-bottom: 62px;
+}
+
+#site.non-appNexus {
+	width: 310px;
+	margin: 0 0 0 -155px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.login-header {
+	margin: 30px 0;
+}
+
+.small-column, .large-column {
+	float: left;
+}
+
+.small-column {
+	width: 310px;
+}
+
+.highlight-box {
+	overflow: hidden;
+	background-color: #e9e9e9;
+	border: 1px solid #bababa;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.highlight-box h2 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 1.1em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	background: #f0f9ff;
+	background: -moz-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -webkit-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -o-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: -ms-linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	background: linear-gradient(top, #f8f8f8 0, #e9e9e9 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr = '#f8f8f8', endColorstr = '#e9e9e9', GradientType = 0);
+	border: 1px solid white;
+	border-bottom: 1px solid #bababa;
+	padding: 12px 15px;
+	position: relative;
+	z-index: 1;
+	border-radius: 5px 5px 0 0;
+}
+
+.highlight-box h2:after {
+	content: "";
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 1px;
+	z-index: 10;
+}
+
+.highlight-box fieldset {
+	display: block;
+	border: 1px solid white;
+	border-radius: 0 0 5px 5px;
+	padding: 15px;
+	margin-bottom: 0;
+}
+
+.highlight-box fieldset label {
+	display: block;
+	font-weight: 700;
+	margin: 15px 0 2px;
+}
+
+.highlight-box fieldset label[for="anxs-login-remember-credentials"] {
+	display: inline;
+}
+
+.highlight-box form label[for="anxs-login-username"],
+.highlight-box form label[for="anxs-forgot-password"],
+.highlight-box form label[for="anxs-forgot-username"],
+.highlight-box form label[for="anxs-reset-username"] {
+	margin-top: 0;
+}
+
+
+
+.highlight-box fieldset input[type="text"],
+.highlight-box fieldset input[type="password"] {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.highlight-box fieldset .btn {
+	margin: 0 15px 0 0;
+}
+
+.highlight-box .content-inner{
+	padding: 15px;
+}
+
+.highlight-light {
+	border: 1px solid #bababa;
+	padding: 15px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.highlight-light h3 {
+	font-size: 1.1em;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.highlight-light li {
+	margin-bottom: 10px;
+	padding-left: 30px;
+	background: url(/images/login/sprite.png) no-repeat;
+}
+
+.highlight-light li a {
+	display: block;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+
+.highlight-light li:last-child {
+	background-position: 0 -30px;
+}
+
+.forgot-link{
+	margin-top: 10px;
+}
+
+.result-action{
+	margin-bottom: 10px;
+}
+
+.large-column {
+	width: 610px;
+	margin-left: 40px;
+}
+
+.feature {
+	margin: 20px 0;
+	padding: 1em 0;
+	border: solid #bababa;
+	border-width: 1px 0;
+}
+
+.feature:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.row .column {
+	width: 45%;
+	float: left;
+	margin: 0 5% 0 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #e9e9e9;
+}
+
+#footer .link-utils {
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#footer .link-utils li {
+	float: left;
+	font-size: .9em;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+#footer,
+#footer .link-utils li a {
+	color: #111111 !important;
+}
+
+#footer {
+	padding: 0;
+}
+
+#footer ul.link-utils {
+	float: none;
+	left: inherit;
+	position: static;
+	overflow: hidden;
+}
