@@ -1,4 +1,4 @@
-[
+{
 	"adnomia" : {
 		"title" : "Adnomia",
 		"logo" : "img/wl/adnomia/logo.png",
@@ -53,4 +53,4 @@
 		"styles.footer_link_color" : "#205273",
 		"styles.footer_text_color" : "#205273"
 	}
-]
+}
